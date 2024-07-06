@@ -1,0 +1,10 @@
+{
+  "createAccount": "a[data-test='sign-in-create-account-link']",
+  "userName": "input[name = 'email']",
+  "password": "input[name = 'password']",
+  "createAcct" : ".Button__button___vS7Mv",
+  "code" : "input[name = 'code']",
+  "confirmBtn" : ".Button__button___vS7Mv"
+  
+  
+}
