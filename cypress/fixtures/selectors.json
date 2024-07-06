@@ -4,7 +4,9 @@
   "password": "input[name = 'password']",
   "createAcct" : ".Button__button___vS7Mv",
   "code" : "input[name = 'code']",
-  "confirmBtn" : ".Button__button___vS7Mv"
+  "confirmBtn" : ".Button__button___vS7Mv",
+  "UserName" : "input[name='username']",
+  "signIn" : "button[type='submit']"
   
   
 }

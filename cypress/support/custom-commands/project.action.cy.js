@@ -21,6 +21,7 @@ before(() => {
 
 Cypress.Commands.add('signUpPage', () => {
 
+    //click on create account button
     cy.get(sel.createAccount).should('be.visible').click()
     
     
@@ -73,10 +74,17 @@ Cypress.Commands.add('retrieveOtp', () => {
 })
 
 Cypress.Commands.add('signIn', () => {
-    cy.get(sel.code).should('be.visible').type(otpValue).trigger('change')
-    cy.get(sel.confirmBtn).click()
 
- 
+    cy.wait(10000);
+    //Inserts email address
+    cy.get(sel.UserName).should('be.visible').type(emailAddress).trigger('change')
+    const password = Cypress.env('password')
+
+    //Inserts password
+    cy.get(sel.password).type(password)
+    //click sign in button
+    cy.get(sel.signIn).click()
+
 
 })
 
