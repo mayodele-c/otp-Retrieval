@@ -1,0 +1,1 @@
+Automating 2FA authentication using mailslurp and mailslurp playground. The process is to use a generated mailslurp email to create an account in the playground, then a code is sent to the generated email. The code is retrieved using automation and then inserted into the code field for the final sign in process to be successful.
